@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Trading Bot</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="tradeOutput">
+        <h1>Trading Bot</h1>
+        <pre id="output">{{ script_output }}</pre>
+    </div>
+
+    <script>
+        function updateTradeOutput() {
+            $.ajax({
+                url: "/run_script",
+                type: "POST",
+                success: function(response) {
+                    if (response.script_output) {
+                        // Display the script_output in the output div
+                        $("#output").html(response.script_output);
+                    }
+                }
+            });
+        }
+
+        // Update the trade output every 10 seconds
+        setInterval(updateTradeOutput, 10000);
+    </script>
+</body>
+</html>
