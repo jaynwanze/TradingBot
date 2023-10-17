@@ -1,7 +1,6 @@
--m pip install --upgrade pip
--m pip install pandas
--m pip install numpy
--m pip install matplotlib
--m pip install python-binance
--m pip install tkinter
--m pip install flask
+pandas=2.1.1
+numpy=1.26.1
+matplotlib=3.8.0
+python-binance=1.0.19
+tkinter=8.6.12
+flask=3.0.0
