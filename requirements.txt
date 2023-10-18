@@ -1,6 +1,6 @@
-pandas==2.1.1
-numpy==1.26.1
-matplotlib==3.8.0
-python-binance==1.0.19
-tkinter==8.6.12
-flask==3.0.0
+pandas
+numpy
+matplotlib
+python-binance
+tkinter
+flask
